@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #2c2c2c;
+    color: #fff;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+/*Land*/
+
+#land {
+    background: linear-gradient(to bottom right, rgba(44, 44, 44, 0.9), rgba(44, 44, 44, 0.9)), url("fondland.png") no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#land .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#land h1 {
+    font-size: 3rem;
+    color: #b998db;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+}
+
+#land p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+#desc {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.cta-button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: #b998db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+    background-color: #c7aadf;
+    transform: scale(1.1);
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-30deg); }
+    50% { transform: translateY(-10px) rotate(-30deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}

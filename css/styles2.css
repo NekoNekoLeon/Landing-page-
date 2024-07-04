@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#titleform {
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #b998db;
+}
+
+#mid {
+    font-size: 1.1rem;
+    color: #b998db;
+    margin-bottom: 1rem;
+}
+
+form {
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #b998db;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #555;
+    color: #fff;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #c7aadf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #b998db;
+}
+
+/* Back Button */
+
+.back-button {
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #b998db;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c7aadf;
+    transform: scale(1.1);
+}

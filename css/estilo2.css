@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+  
+  body {
+    background-color: #000;
+  }
+  
+  header {
+    background-color: #000;
+    --pad: 2.125%;
+    padding: var(--pad);
+    width: calc(100% - calc(var(--pad) * 2));
+    height: 100px;
+    color: #fff;
+  }
+  
+  #logo {
+    display: flex;
+  }
+  
+  #logo h1 {
+    --size: 2.25rem;
+    font-size: var(--size);
+    margin: calc(var(--size) / 5) 0 0 1rem;
+  }
+  
+  header hr {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    float: left;
+    margin: 1rem 0;
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  header nav div {
+    margin-left: 0.5rem;
+    display: flex;
+    width: 18rem;
+  }
+  
+  header nav div input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-align: right;
+    height: 50%;
+    width: 60%;
+    margin: 0.75rem 0.25rem 0 0;
+    padding: 0.05rem;
+  }
+  
+  header nav div button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 40%;
+    color: #fff;
+    padding: 1rem 1.75rem;
+  }
+  
+  #products {
+    padding: 40px 20px; /* Añadido espacio interior */
+    background-color: #000;
+    color: #fff;
+  }
+  
+  #products h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: grid; /* Cambiado a grid para mejor control del espacio */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Espacio entre productos */
+  }
+  
+  .product {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+  }
+  
+  .product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Borde redondeado para la imagen */
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* Color del texto */
+  }
+  
+  .product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ccc; /* Color del texto secundario */
+  }
+  
+  .product .btn, .btn-cart {
+    padding: 10px 20px;
+    background-color: #b998db; /* Color del botón */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    display: inline-block;
+    margin-top: 10px; /* Espacio entre el botón y el contenido */
+  }
+  
+  .product .btn:hover, .btn-cart:hover {
+    background-color: #c7aadf; /* Color hover del botón */
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Reducido el padding */
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 5px; /* Espacio inferior reducido */
+  }
+  
+  .social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
